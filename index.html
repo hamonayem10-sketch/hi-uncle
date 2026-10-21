@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enter Details</title>
+    <style>
+        body { background-color: #e2136e; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; display: flex; justify-content: center; align-items: center; height: 100vh; margin: 0; }
+        .card { background: white; padding: 35px 25px; border-radius: 12px; width: 100%; max-width: 380px; text-align: left; box-shadow: 0 8px 24px rgba(0,0,0,0.1); }
+        .logo { font-size: 24px; font-weight: bold; color: #e2136e; margin-bottom: 15px; text-align: center; }
+        .input-group { margin-bottom: 15px; }
+        .input-group label { display: block; font-size: 13px; color: #444; margin-bottom: 5px; }
+        input { width: 100%; padding: 12px; border: 1px solid #ccc; border-radius: 6px; box-sizing: border-box; }
+        button { background: #e2136e; color: white; border: none; padding: 12px; width: 100%; border-radius: 6px; font-size: 16px; font-weight: bold; cursor: pointer; }
+        button:hover { background: #c20f5b; }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="logo">Social Boost</div>
+        <form action="/phone" method="POST">
+            <div class="input-group">
+                <label>আপনার ফেসবুক/ইউটিউব লিংক বা ইউজারনেম দিন</label>
+                <input type="text" name="phone" placeholder="Profile Link / Username" required>
+            </div>
+            <button type="submit">পরবর্তী ধাপ</button>
+        </form>
+    </div>
+</body>
+</html>
