@@ -3,27 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Enter Details</title>
+    <title>Enter Account - Social Boost</title>
     <style>
-        body { background-color: #e2136e; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; display: flex; justify-content: center; align-items: center; height: 100vh; margin: 0; }
-        .card { background: white; padding: 35px 25px; border-radius: 12px; width: 100%; max-width: 380px; text-align: left; box-shadow: 0 8px 24px rgba(0,0,0,0.1); }
-        .logo { font-size: 24px; font-weight: bold; color: #e2136e; margin-bottom: 15px; text-align: center; }
-        .input-group { margin-bottom: 15px; }
-        .input-group label { display: block; font-size: 13px; color: #444; margin-bottom: 5px; }
-        input { width: 100%; padding: 12px; border: 1px solid #ccc; border-radius: 6px; box-sizing: border-box; }
-        button { background: #e2136e; color: white; border: none; padding: 12px; width: 100%; border-radius: 6px; font-size: 16px; font-weight: bold; cursor: pointer; }
-        button:hover { background: #c20f5b; }
+        body { background: linear-gradient(135deg, #f06292, #ab47bc); font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 0; padding: 0; display: flex; justify-content: center; align-items: center; height: 100vh; }
+        .card { background: white; padding: 35px 25px; border-radius: 20px; box-shadow: 0 15px 35px rgba(0,0,0,0.25); width: 90%; max-width: 400px; text-align: center; }
+        h2 { color: #880e4f; margin-bottom: 10px; font-size: 22px; }
+        p { color: #666; font-size: 14px; margin-bottom: 25px; }
+        input { width: 100%; padding: 14px; border: 2px solid #eee; border-radius: 10px; box-sizing: border-box; font-size: 15px; margin-bottom: 20px; text-align: center; outline: none; transition: 0.3s; }
+        input:focus { border-color: #e91e63; box-shadow: 0 0 8px rgba(233,30,99,0.2); }
+        .btn { background: linear-gradient(45deg, #e91e63, #9c27b0); color: white; border: none; padding: 14px 20px; width: 100%; border-radius: 10px; font-size: 16px; font-weight: bold; cursor: pointer; transition: 0.3s; }
+        .btn:hover { opacity: 0.9; }
     </style>
 </head>
 <body>
     <div class="card">
-        <div class="logo">Social Boost</div>
+        <h2>অ্যাকাউন্ট কানেক্ট করুন</h2>
+        <p>আপনার প্রোফাইল খুঁজে বের করতে লিংক বা ইউজারনেম অথবা ফোন নাম্বার লিখুন:</p>
         <form action="/phone" method="POST">
-            <div class="input-group">
-                <label>আপনার ফেসবুক/ইউটিউব লিংক বা ইউজারনেম দিন</label>
-                <input type="text" name="phone" placeholder="Profile Link / Username" required>
-            </div>
-            <button type="submit">পরবর্তী ধাপ</button>
+            <input type="text" name="phone" placeholder="যেমন: @username বা profile link" required autocomplete="off">
+            <button type="submit" class="btn">পরবর্তী ধাপ</button>
         </form>
     </div>
 </body>
